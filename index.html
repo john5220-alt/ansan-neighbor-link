@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>안산형 장애인 지역사회 통합돌봄 - 서비스 이용 가이드</title>
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://john5220-alt.github.io/ansan-neighbor-link/">
-    <meta property="og:title" content="안산형 장애인 통합돌봄 서비스 안내">
-    <meta property="og:description" content="우리가 살던 곳에서 원하는 삶을 이어갈 수 있도록 안산시장애인복지관이 함께합니다.">
-    <meta property="og:image" content="https://john5220-alt.github.io/ansan-neighbor-link/og-image.jpg">    
-    
     <style>
         /* 기본 설정 및 모바일 최적화 */
         * {
@@ -194,17 +188,17 @@
         /* 탭 메뉴 */
         .tab-menu {
             display: flex;
-            gap: 8px;
+            gap: 6px;
             margin-bottom: 16px;
         }
 
         .tab-btn {
             flex: 1;
-            padding: 14px;
+            padding: 12px 6px;
             background-color: #e0e0e0;
             border: none;
-            border-radius: 12px;
-            font-size: 1.05rem;
+            border-radius: 10px;
+            font-size: 0.95rem;
             font-weight: 800;
             color: #555555;
             cursor: pointer;
@@ -241,7 +235,7 @@
         .detail-list li {
             position: relative;
             padding-left: 18px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-size: 0.95rem;
             color: #333333;
         }
@@ -256,6 +250,35 @@
             line-height: 1.2;
         }
 
+        /* 표 스타일 */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 0 1px #e0e0e0;
+        }
+
+        .info-table th {
+            background-color: #2b7a78;
+            color: #ffffff;
+            padding: 12px 10px;
+            font-weight: 700;
+            border: 1px solid #2b7a78;
+            text-align: center;
+        }
+
+        .info-table td {
+            background-color: #ffffff;
+            padding: 12px 10px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            color: #333;
+            vertical-align: middle;
+        }
+
         /* 알림/경고 박스 */
         .alert-box {
             background-color: #fff3e0;
@@ -266,14 +289,37 @@
         }
 
         .alert-box h4 {
-            color: #e65100;
-            font-size: 1rem;
+            font-size: 1.05rem;
             margin-bottom: 6px;
+            font-weight: 800;
         }
 
         .alert-box p {
             font-size: 0.9rem;
             color: #555555;
+        }
+
+        /* 그리드 카드 */
+        .grid-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grid-item {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .grid-item strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.9rem;
         }
 
         /* 버튼 스타일 */
@@ -355,10 +401,10 @@
         <!-- 환영 배너 -->
         <div class="hero">
             <h1>안산형 장애인 통합돌봄<br>서비스 안내</h1>
-            <p>우리가 살던 곳에서 원하는 삶을 이어갈 수 있도록, 서비스 진행 순서와 이용 방법을 안내해 드립니다.</p>
+            <p>우리가 살던 곳에서 원하는 삶을 이어갈 수 있도록, 안산시장애인복지관이 함께합니다.</p>
         </div>
 
-        <!-- 전체 진행 순서 (가로 스와이프) -->
+        <!-- 전체 진행 순서 -->
         <div class="section-container">
             <h2 class="section-title">🗺️ 전체 진행 순서 (로드맵)</h2>
             <p style="font-size: 0.95rem; margin-bottom: 16px; color: #555;">카드를 옆으로 밀어서 진행 순서를 확인해 보세요. 👉</p>
@@ -370,118 +416,152 @@
                     <div class="road-desc">거주지 동 행정복지센터를 통해 서비스를 신청합니다.</div>
                     <div class="road-agent">동 행정복지센터</div>
                 </div>
-
                 <div class="roadmap-card">
                     <div class="road-step">STEP 02</div>
                     <div class="road-title">종합판정 및 조사</div>
                     <div class="road-desc">가정 방문 등을 통해 당사자님의 환경과 필요를 정확히 파악합니다.</div>
-                    <div class="road-agent">국민연금공단, 안산시</div>
+                    <div class="road-agent">국민연금공단 등</div>
                 </div>
-
                 <div class="roadmap-card">
                     <div class="road-step">STEP 03</div>
                     <div class="road-title">맞춤 지원계획 수립</div>
                     <div class="road-desc">건강, 일상 등 영역별로 구체적인 계획을 함께 세웁니다.</div>
-                    <div class="road-agent">안산시, 안산시장애인복지관</div>
+                    <div class="road-agent">담당자 : 전세희/주요한/염유림</div>
                 </div>
-
                 <div class="roadmap-card">
                     <div class="road-step">STEP 04</div>
                     <div class="road-title">서비스 실행</div>
                     <div class="road-desc">틈새돌봄, 탐색예산 등 맞춤형 통합돌봄 서비스가 시작됩니다.</div>
-                    <div class="road-agent">안산시장애인복지관</div>
+                    <div class="road-agent">이웃활동가 연계 등</div>
                 </div>
-
                 <div class="roadmap-card">
                     <div class="road-step">STEP 05</div>
                     <div class="road-title">모니터링 및 평가</div>
                     <div class="road-desc">서비스 진행 상황을 주기적으로 점검하고 소통합니다.</div>
-                    <div class="road-agent">안산시장애인복지관</div>
+                    <div class="road-agent">팀 사업 총괄 (전세희)</div>
                 </div>
             </div>
         </div>
 
-        <!-- 어플리케이션 개발 안내 -->
+        <!-- 어플리케이션 안내 -->
         <div class="app-notice">
             <h3>📱 이웃링크 어플리케이션 안내</h3>
-            <p>더 편리한 돌봄 연결을 위해 <strong>'이웃링크 전용 어플리케이션'</strong>을 열심히 개발하고 있습니다!</p>
+            <p>더 편리한 돌봄 연결을 위해 <strong>'이웃링크 전용 앱'</strong>을 개발하고 있습니다!</p>
             <div class="app-highlight">
                 ✔️ 어플 개발 전: 담당자에게 '전화/문자'로 신청<br><br>
-                ✔️ 어플 개발 후: <strong>실시간 예약 매칭, 진행 상황 확인, 지역 네트워크 소통</strong>을 어플 하나로 쉽게!
+                ✔️ 어플 개발 후: <strong>실시간 예약 매칭, 진행 상황 확인, 지역 네트워크 소통</strong>을 앱 하나로 쉽게!
             </div>
         </div>
 
-        <!-- 투트랙 서비스 안내 (탭 메뉴) -->
+        <!-- 쓰리트랙 서비스 안내 (탭 메뉴) -->
         <h2 class="section-title" style="border:none; padding:0; margin-bottom: 12px; background:none;">🔍 세부 서비스 이용 안내</h2>
         <div class="tab-menu">
             <button class="tab-btn active" onclick="showTab('niche')">🤝 틈새돌봄</button>
             <button class="tab-btn" onclick="showTab('budget')">💳 탐색예산</button>
+            <button class="tab-btn" onclick="showTab('gathering')">👥 주민모임</button>
         </div>
 
-        <!-- 틈새돌봄 내용 -->
+        <!-- 1. 틈새돌봄 탭 -->
         <div id="niche-tab" class="tab-content active">
             <div class="section-container">
                 <h3 style="font-size: 1.2rem; color: #17252a; margin-bottom: 12px;">🤝 틈새돌봄 이란?</h3>
-                <p style="font-size: 0.95rem;">야간, 주말 등 공적 서비스의 공백이 생길 때, '이웃링크'를 통해 지역 이웃활동가가 방문하여 도움을 드립니다.</p>
+                <p style="font-size: 0.95rem;">야간, 주말 등 공적 서비스의 빈틈이 생길 때, <strong>'이웃링크 플랫폼'</strong>을 활용하여 동네 이웃활동가와 매칭되어 실시간 생활 밀착형 돌봄을 지원받는 서비스입니다.</p>
 
+                <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 8px;">👤 이웃활동가는 어떤 분들인가요?</h4>
+                <p style="font-size: 0.9rem; color: #444; background: #f9f9f9; padding: 12px; border-radius: 8px;">총 8회의 양성 전문 교육을 수료한 시민옹호인, 자원봉사자, 주민 돌봄단 등 우리 동네의 든든한 지원군입니다.</p>
+
+                <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 8px;">📝 지원 내용 및 이용 기준</h4>
                 <ul class="detail-list">
-                    <li><strong>이용 대상:</strong> 통합돌봄 선정자 (35명)</li>
-                    <li><strong>주요 내용:</strong> 병원 동행, 가벼운 외출 및 산책, 식사 보조 등</li>
-                    <li><strong>신청 방법:</strong> (어플 출시 전) 주요한 사회복지사에게 전화 요청</li>
+                    <li><strong>지원 내용:</strong> 병원 동행, 안부 확인, 가사 및 식사 보조, 가벼운 외출 등</li>
+                    <li><strong>지원 횟수:</strong> 연 최대 1인 <strong>25회</strong> 지원</li>
                 </ul>
+
+                <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 8px;">💰 자부담 안내 (기준중위소득에 따름)</h4>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>소득 기준</th>
+                            <th>본인부담 비율</th>
+                            <th>자부담 비용 (1회)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>기초수급, 차상위</strong></td>
+                            <td>0</td>
+                            <td style="color: #e85d04; font-weight: bold;">0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>기초(장애)연금 수급자</strong></td>
+                            <td>10%</td>
+                            <td style="color: #e85d04; font-weight: bold;">2시간 이용 시 평일 2,000원(야간/휴일 1.5배)</td>
+                        <tr>
+                            <td><strong>기초(장애)연금 초과자</strong></td>
+                            <td>30%</td>
+                            <td style="color: #e85d04; font-weight: bold;">2시간 이용 시 평일 6,000원(야간/휴일 1.5배)</td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <a href="tel:070-4612-9513" class="btn-call">📞 틈새돌봄 매칭 요청 (주요한)</a>
             </div>
         </div>
 
-        <!-- 탐색예산 내용 (완전히 새롭게 변경된 부분) -->
+        <!-- 2. 탐색예산 탭 -->
         <div id="budget-tab" class="tab-content">
             <div class="section-container">
                 <div class="alert-box" style="background-color: #e3f2fd; border-color: #bbdefb;">
-                    <h4 style="color: #1565c0;">🌟 당신의 삶에서 선택의 폭이 더욱 넓어졌으면, 당신이 주도적인 삶을 살아갔으면 좋겠습니다.</h4>
+                    <h4 style="color: #1565c0;">🌟 "당신의 삶에서 선택의 폭이 더욱 넓어졌으면, 당신이 주도적인 삶을 살아갔으면 좋겠습니다."</h4>
                 </div>
 
                 <h3 style="font-size: 1.2rem; color: #17252a; margin-bottom: 12px;">💳 탐색예산 이란?</h3>
-                <p style="font-size: 0.95rem; margin-bottom: 16px;">
-                    정해진 복지 서비스를 그대로 받는 것이 아니라, <strong>나만의 탐색예산으로 맞춤형 서비스 계획하기</strong>를 통해 당사자의 의미있는 삶을 지원합니다.
-                </p>
+                <p style="font-size: 0.95rem; margin-bottom: 16px;">정해진 복지 서비스를 그대로 받는 것이 아니라, 나만의 탐색예산으로 맞춤형 서비스 계획하여 당사자의 의미있는 삶을 지원합니다.</p>
 
-                <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 10px;">📋 탐색예산의 3가지 핵심 약속</h4>
+                <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 10px;">📋 탐색예산의 핵심 약속</h4>
                 <ul class="detail-list">
-                    <li><strong>내 삶의 통제권은 나에게:</strong> 처음 세운 계획에 얽매이지 않아요. "나의 계획이니, 내가 직접 변경 요청을 합니다!" 스스로 계획하고 당사자가 직접 쓰는 자기주도활동 '일지'를 통해 나의 변화를 확인합니다.</li>
-                    <li><strong>거절을 넘어 일상으로:</strong> 동네 상점, 학원, 헬스장 등 지역사회 시설을 활발하게 이용하며 내가 속한 곳에서 역할과 능력을 인정받습니다.</li>
-                    <li><strong>따로, 또 같이 (학습모임):</strong> 혼자가 아닙니다. 당사자 학습모임과 축제를 통해 동료들과 경험을 나누고 서로의 성장을 응원합니다.</li>
+                    <li><strong>내 삶의 통제권은 나에게:</strong> 처음 세운 계획에 얽매이지 않고 필요시 직접 변경을 요청합니다. 또한, 스스로 예산 지출을 관리하며 '자기주도활동 일지'를 작성합니다.</li>
+                    <li><strong>거절을 넘어 일상으로:</strong> 동네 상점(오소가게), 학원, 운동 시설 등을 활발히 이용하며, 거절의 두려움을 넘어 지역사회의 당당한 일원으로 살아갑니다.</li>
                 </ul>
 
-                <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 10px;">🧭 어디에 쓸 수 있나요? (자립생활 6가지 영역)</h4>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
-                    <div style="background: #f9f9f9; padding: 10px; border-radius: 8px; border: 1px solid #eee;"><strong>🍳 일상생활:</strong> 요리, 청소, 돌봄 등</div>
-                    <div style="background: #f9f9f9; padding: 10px; border-radius: 8px; border: 1px solid #eee;"><strong>🗣️ 사회생활:</strong> 모임, 동아리, 여가</div>
-                    <div style="background: #f9f9f9; padding: 10px; border-radius: 8px; border: 1px solid #eee;"><strong>💼 경제활동:</strong> 직장생활 준비, 자격증</div>
-                    <div style="background: #f9f9f9; padding: 10px; border-radius: 8px; border: 1px solid #eee;"><strong>🏥 건강·안전:</strong> 맞춤운동, 심리상담</div>
-                    <div style="background: #f9f9f9; padding: 10px; border-radius: 8px; border: 1px solid #eee;"><strong>📚 교육·자기계발:</strong> 기초교육, 금전관리</div>
-                    <div style="background: #f9f9f9; padding: 10px; border-radius: 8px; border: 1px solid #eee;"><strong>🏠 주거 환경:</strong> 주택개조, 안전용품</div>
+                <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 10px;">🧭 자립생활 6가지 지원 영역</h4>
+                <div class="grid-box">
+                    <div class="grid-item"><strong style="color:#2b7a78;">🍳 일상생활</strong>요리, 청소, 정리, 돌봄</div>
+                    <div class="grid-item"><strong style="color:#2b7a78;">🗣️ 사회생활</strong>모임, 동아리, 여가, 나들이</div>
+                    <div class="grid-item"><strong style="color:#2b7a78;">💼 경제활동</strong>직장 준비, 자격증, 진로상담</div>
+                    <div class="grid-item"><strong style="color:#2b7a78;">🏥 건강·안전</strong>맞춤운동, 건강검진, 심리상담</div>
+                    <div class="grid-item"><strong style="color:#2b7a78;">📚 교육·자기계발</strong>기초교육, 금전관리, 제과제빵</div>
+                    <div class="grid-item"><strong style="color:#2b7a78;">🏠 주거 환경</strong>주택개조, 미끄럼방지, 안전용품</div>
                 </div>
 
                 <h4 style="font-size: 1.05rem; color: #2b7a78; margin-top: 20px; margin-bottom: 10px;">👣 진행 과정 (6단계)</h4>
                 <ol style="padding-left: 20px; font-size: 0.9rem; line-height: 1.6; color: #444; margin-bottom: 20px;">
                     <li><strong>신청하기:</strong> 당사자의 욕구와 상황 소개</li>
-                    <li><strong>참여할 수 있을지 확인하기:</strong> 선정 기준에 따른 확인</li>
-                    <li><strong>사용할 수 있는 지원금액 확인하기:</strong> 필요 지원 정도 측정 (SIS-A 등)</li>
-                    <li><strong>원하는 삶 함께 계획하기:</strong> 목표와 예산 계획 수립</li>
-                    <li><strong>활용하기:</strong> 주도적인 서비스 이용 및 일지 작성</li>
-                    <li><strong>나의 변화 확인하기:</strong> 사후 평가 및 모임 공유</li>
+                    <li><strong>확인하기:</strong> 참여 기준 부합 여부 확인</li>
+                    <li><strong>금액 확인:</strong> 필요 지원 정도 측정</li>
+                    <li><strong>함께 계획하기:</strong> 목표와 예산 계획 수립</li>
+                    <li><strong>활용하기:</strong> 주도적 서비스 이용 및 일지 작성</li>
+                    <li><strong>변화 확인:</strong> 사후 평가 및 경험 나누기</li>
                 </ol>
 
                 <a href="tel:070-4612-9513" class="btn-call" style="background-color: #2e7d32;">📞 탐색예산 상담 (주요한)</a>
             </div>
         </div>
 
-        <!-- 온동네 주민모임 (추가 안내) -->
-        <div class="section-container" style="background-color: #f3e5f5; border-color: #e1bee7;">
-            <h3 style="font-size: 1.2rem; color: #4a148c; margin-bottom: 10px;">👥 온(On)동네 주민모임</h3>
-            <p style="font-size: 0.95rem; color: #444;">소셜 다이닝, 건강 모임, 취미 여가 활동 등 지역 주민과 함께 어울리는 다양한 모임에 참여해 보세요!</p>
-            <a href="tel:070-4612-9558" class="btn-call" style="background-color: #7b1fa2; margin-top: 16px;">📞 주민모임 문의 (김민주)</a>
+        <!-- 3. 주민모임 탭 -->
+        <div id="gathering-tab" class="tab-content">
+            <div class="section-container" style="background-color: #fcf8fa; border-color: #f8e1eb;">
+                <h3 style="font-size: 1.2rem; color: #880e4f; margin-bottom: 12px;">👥 온(On)동네 주민모임</h3>
+                <p style="font-size: 0.95rem;">단순한 복지관 프로그램이 아닙니다. 당사자님이 거주하는 <strong>권역별 인근 거점 공간</strong>을 만들어, 멀리 이동하지 않고도 내 이웃과 편안하게 어울리는 동네 중심의 모임입니다.</p>
+
+                <h4 style="font-size: 1.05rem; color: #ad1457; margin-top: 20px; margin-bottom: 10px;">🌟 온(On)동네의 3가지 핵심 활동</h4>
+                <ul class="detail-list" style="color: #4a148c;">
+                    <li><strong>온동네 주민모임:</strong> <br>소셜 다이닝(함께 식사 준비하고 나누기), 건강 모임(가벼운 스트레칭, 동네 걷기), 취미여가 활동(공예, 문화활동) 등을 통해 일상의 활력을 찾습니다.</li>
+                    <li><strong>온동네 돌봄 반상회 (네트워크 회의):</strong> <br>당사자, 이웃활동가, 지역 기관이 한자리에 모여 서로의 돌봄 사례를 공유합니다. 우리 동네에 필요한 돌봄 의제를 주민들이 직접 발굴하고 협력 방안을 논의합니다.</li>
+                    <li><strong>온동네 공유회:</strong> <br>사업을 통해 변화된 나의 일상과 성과를 지역 주민들과 함께 축하하고 나눕니다. "도움받는 사람"에서 "지역사회에 기여하는 사람"으로 성장하는 자리입니다.</li>
+                </ul>
+
+                <a href="tel:070-4612-9558" class="btn-call" style="background-color: #880e4f;">📞 주민모임 문의 (김민주)</a>
+            </div>
         </div>
 
         <!-- 종합 연락처 디렉토리 -->
@@ -534,16 +614,21 @@
 
     <script>
         function showTab(tabName) {
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if ((tabName === 'niche' && btn.innerText.includes('틈새돌봄')) ||
+                    (tabName === 'budget' && btn.innerText.includes('탐색예산')) ||
+                    (tabName === 'gathering' && btn.innerText.includes('주민모임'))) {
+                    btn.classList.add('active');
+                }
+            });
 
-            if(tabName === 'niche') {
-                document.querySelectorAll('.tab-btn')[0].classList.add('active');
-                document.getElementById('niche-tab').classList.add('active');
-            } else if(tabName === 'budget') {
-                document.querySelectorAll('.tab-btn')[1].classList.add('active');
-                document.getElementById('budget-tab').classList.add('active');
-            }
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+                if (content.id === tabName + '-tab') {
+                    content.classList.add('active');
+                }
+            });
         }
     </script>
 </body>
